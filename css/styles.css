@@ -1,0 +1,575 @@
+/* Import de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Shavian&family=Open+Sans:wght@300;400;500&family=Roboto&family=Sora:wght@200&display=swap');
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración global */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    width: 100%;
+}
+
+/* Colores reutilizables */
+.colorBlanco {
+    color: white;
+}
+
+.colorGris {
+    color: rgb(147, 150, 152);
+}
+
+.colorVerde {
+    color: rgb(41, 167, 68);
+}
+
+/* Encabezado */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgb(53, 58, 64);
+    color: beige;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+li a {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+}
+
+.logo {
+    display: flex;
+    width: 250px;
+    padding: 20px 20px 20px 50px;
+}
+
+.logoTitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.encabezado h2 {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 500;
+}
+
+/* Conferencia */
+.conferencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url(../assets/img/ba1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    margin-top: 0;
+    padding-right: 40px;
+}
+
+.textoConf {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    width: 50%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.conferencia a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.conferencia a:hover {
+    background: rgba(128, 128, 128, 0.554);
+    transition: 1s;
+}
+
+.botonOrador {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Sección Oradores */
+main h2 {
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: medium;
+}
+
+.tituloOradores {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.oradores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+}
+
+.imgOra {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+    margin-left: 40px;
+}
+
+.contenido {
+    width: 300px;
+    border-left: 0.5px solid rgb(222, 217, 217);
+    border-bottom: 0.5px solid rgb(222, 217, 217);
+    border-right: 0.5px solid rgb(222, 217, 217);
+    margin-left: 40px;
+    height: 220px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.contenido p {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: small;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.tituloAmarillo,
+.tituloCeleste,
+.tituloGris,
+.tituloRojo {
+    display: inline-block;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.orador {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+/* Lugar y Fecha */
+.lugarFecha {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid white;
+    width: 100%;
+}
+
+.lugar {
+    background: rgb(53, 58, 64);
+    border-left: white 1px solid;
+    padding-left: 10px;
+    width: 50%;
+}
+
+.lugar h2 {
+    display: flex;
+    align-items: flex-start;
+    background: rgb(53, 58, 64);
+    color: white;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    padding-left: 10px;
+    height: 80px;
+}
+
+.lugar p {
+    color: white;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: small;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.conoceMas a {
+    text-decoration: none;
+    color: white;
+}
+
+.conoceMas {
+    display: inline-block;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.lugarFecha img {
+    width: 50%;
+}
+
+/* Formulario */
+form {
+    margin: 0 auto;
+}
+
+.contenidoForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formulario h2 {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    text-align: center;
+    font-size: medium;
+    font-weight: 300;
+    color: rgb(48, 47, 47);
+}
+
+.tituloOrador {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+    color: rgb(48, 47, 47);
+}
+
+.datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+
+.formulario p {
+    text-align: center;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    color: rgb(48, 47, 47);
+}
+
+.contenidoForm p {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: small;
+    color: rgb(156, 152, 152);
+}
+
+input:hover {
+    background: rgb(223, 218, 218);
+}
+
+input:focus {
+    background: rgb(203, 193, 193);
+}
+
+input {
+    width: 210px;
+    padding: 5px;
+    font-family: 'Noto Sans Shavian', sans-serif;
+}
+
+textarea:hover {
+    background: rgb(223, 218, 218);
+}
+
+textarea {
+    width: 460px;
+    font-family: 'Noto Sans Shavian', sans-serif;
+}
+
+.name {
+    margin-right: 40px;
+}
+
+.botonEnviar input {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: rgb(150, 201, 62);
+    border-radius: 5px;
+    width: 460px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 20px 70px 20px 70px;
+    background: linear-gradient(to right, rgb(28, 54, 67), rgb(29, 82, 113));
+}
+
+.footer a {
+    width: 80px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: 15px;
+}
+
+/* Tickets */
+.titulo {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(99, 145, 218);
+    height: 50px;
+    color: white;
+}
+
+.compraTickets {
+    background-color: rgb(238, 235, 235);
+    padding-bottom: 150px;
+}
+
+.ventas {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(208, 205, 205);
+    border: 3px solid rgb(150, 148, 148);
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.comprar {
+    display: flex;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    color: white;
+    height: 70px;
+}
+
+.tickets {
+    display: flex;
+    width: 250px;
+    padding: 20px;
+}
+
+/* Error 404 */
+.body {
+    high: 100%;
+}
+
+.main404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imagen404 {
+    display: flex;
+    margin: 0 auto;
+    width: 66%;
+}
+
+.texto404 {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    text-align: center;
+}
+
+.titulo404 {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.error {
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: red;
+}
+
+/* Media Queries */
+@media screen and (max-width: 360px) {
+    .textoConf {
+        padding: 0px 0px 20px 0px;
+    }
+
+    .conferencia h1 {
+        padding: 0;
+    }
+
+    .lugarFecha img {
+        width: 350px;
+    }
+
+    .lugar {
+        width: 350px;
+        padding-bottom: 20px;
+    }
+
+    .name {
+        margin-right: 2px;
+    }
+
+    form {
+        width: 360px;
+    }
+
+    input {
+        width: 150px;
+    }
+
+    textarea {
+        width: 360px;
+    }
+
+    .botonEnviar input {
+        width: 360px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 0;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .encabezado {
+        flex-direction: column;
+    }
+
+    .encabezado h2 {
+        font-size: 30px;
+    }
+
+    .logoTitulo {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 270px;
+        padding: 10px 3px 3px 3px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li a {
+        padding: 5px;
+    }
+
+    .conferencia {
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .conferencia p {
+        text-align: center;
+    }
+
+    .conferencia h1 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .tituloOradores {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contenido {
+        margin: 0;
+    }
+
+    .imgOra {
+        margin: 0;
+    }
+
+    .lugarFecha {
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+    }
+
+    .lugar {
+        padding-bottom: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+    }
+
+    /* Media Queries para Tickets */
+    .ventas {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .footer {
+        flex-direction: column;
+        height: 100px;
+    }
+}
